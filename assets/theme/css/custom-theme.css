@@ -1,0 +1,320 @@
+/* Clean Dark Theme - Inspired by riecomp.org */
+
+body {
+  background: #0a0a0a;
+  color: #e5e5e5;
+  font-family: 'Jost', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Sections */
+section {
+  background: #0a0a0a !important;
+  padding: 40px 0;
+}
+
+section.header10 {
+  padding: 50px 0;
+}
+
+section.gallery2,
+section.gallery3,
+section.gallery4,
+section.gallery5 {
+  padding: 35px 0;
+}
+
+section.image3 {
+  padding: 30px 0 35px 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6,
+.mbr-section-title {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+p, .mbr-text {
+  color: #b0b0b0 !important;
+  line-height: 1.7;
+}
+
+a {
+  color: #ffffff;
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: none;
+  letter-spacing: 0.3px;
+}
+
+.btn-white {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: none;
+}
+
+.btn-white:hover {
+  background: #e5e5e5 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.btn-primary {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #e5e5e5 !important;
+}
+
+.btn-primary-outline {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.btn-primary-outline:hover {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.btn-info {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border: none;
+}
+
+.btn-info:hover {
+  background: #e5e5e5 !important;
+}
+
+/* Images */
+.item-wrapper {
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.item-wrapper:hover {
+  transform: translateY(-4px);
+}
+
+.item-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Logo Section with White Background and Frames */
+.gallery5 .item-wrapper {
+  background: #ffffff;
+  padding: 6px;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery5 .item-wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(255, 255, 255, 0.2);
+}
+
+.gallery5 .item-img {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gallery5 .item-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Award Images with White Frames */
+.gallery3 .item-wrapper,
+.gallery4 .item-wrapper {
+  background: #ffffff;
+  padding: 8px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery3 .item-wrapper:hover,
+.gallery4 .item-wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(255, 255, 255, 0.2);
+}
+
+.gallery3 .item-img,
+.gallery4 .item-img {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.gallery3 .item-img img,
+.gallery4 .item-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Fix gallery4 click to not navigate but open modal */
+.gallery4 .item-wrapper a {
+  pointer-events: none;
+}
+
+.gallery4 .item-wrapper {
+  pointer-events: auto;
+}
+
+/* Modal Enhancement for Image Click */
+.modal-content {
+  background: #0a0a0a;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+}
+
+.modal-body {
+  padding: 30px;
+  background: #0a0a0a;
+}
+
+.modal-dialog {
+  max-width: 900px;
+}
+
+.carousel-item img {
+  border-radius: 12px;
+  background: #ffffff;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+.modal .close {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 2rem;
+}
+
+/* Unified Button Styles - Slick Black and White */
+a.btn,
+button.btn,
+.btn,
+.btn-white,
+.btn-primary,
+.btn-info,
+.btn-primary-outline,
+.btn-sm,
+.btn-md,
+.btn-lg,
+.mbr-section-btn .btn,
+.display-4.btn {
+  border-radius: 6px !important;
+  padding: 10px 24px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  text-transform: none !important;
+  letter-spacing: 0.3px !important;
+  font-size: 1rem !important;
+  border: 2px solid #ffffff !important;
+  background: #ffffff !important;
+  color: #000000 !important;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2) !important;
+  margin: 0.3rem !important;
+}
+
+a.btn:hover,
+button.btn:hover,
+.btn:hover,
+.btn-white:hover,
+.btn-primary:hover,
+.btn-info:hover,
+.btn-sm:hover,
+.btn-md:hover,
+.btn-lg:hover,
+.mbr-section-btn .btn:hover,
+.display-4.btn:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3) !important;
+}
+
+.btn-primary-outline {
+  background: transparent !important;
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+}
+
+.btn-primary-outline:hover {
+  background: #ffffff !important;
+  color: #000000 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Clean Spacing */
+.header10 {
+  padding: 50px 0;
+}
+
+.image3 {
+  padding: 30px 0 35px 0;
+  border-bottom: none;
+  position: relative;
+}
+
+.image3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%);
+}
+
+/* Image Containers */
+.image-wrap {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
